@@ -8,7 +8,7 @@ export default function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
             What Makes <span className="text-primary font-comfortaa">Flokiz</span> Special?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             We're revolutionizing childhood development through play, creativity, and learning in a safe, hygienic, and fun environment
           </p>
         </div>
@@ -23,10 +23,10 @@ export default function AboutSection() {
           </div>
           
           <div className="order-1 md:order-2">
-            <h3 className="text-3xl font-poppins font-bold text-gray-800 mb-6">
+            <h3 className="text-3xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
               Africa's First Premium Indoor Playground
             </h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
               Flokiz combines cognitive, physical, and creative development in one magical space. Our state-of-the-art facility is designed to stimulate young minds while ensuring maximum safety and hygiene standards.
             </p>
             
@@ -35,19 +35,19 @@ export default function AboutSection() {
                 <div className="bg-green-500 text-white rounded-full p-2 mr-4">
                   <Check className="h-5 w-5" />
                 </div>
-                <span className="text-lg font-medium">Ultra-modern play equipment</span>
+                <span className="text-lg font-medium text-gray-800 dark:text-white">Ultra-modern play equipment</span>
               </div>
               <div className="flex items-center">
                 <div className="bg-green-500 text-white rounded-full p-2 mr-4">
                   <Check className="h-5 w-5" />
                 </div>
-                <span className="text-lg font-medium">Multilingual library (English, French, Arabic)</span>
+                <span className="text-lg font-medium text-gray-800 dark:text-white">Multilingual library (English, French, Arabic)</span>
               </div>
               <div className="flex items-center">
                 <div className="bg-green-500 text-white rounded-full p-2 mr-4">
                   <Check className="h-5 w-5" />
                 </div>
-                <span className="text-lg font-medium">Well-trained professional animators</span>
+                <span className="text-lg font-medium text-gray-800 dark:text-white">Well-trained professional animators</span>
               </div>
               <div className="flex items-center">
                 <div className="bg-green-500 text-white rounded-full p-2 mr-4">

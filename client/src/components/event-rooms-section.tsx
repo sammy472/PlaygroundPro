@@ -44,13 +44,13 @@ export default function EventRoomsSection() {
   ];
 
   return (
-    <section id="events" className="py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
+    <section id="events" className="py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
             Event <span className="text-accent font-comfortaa">Rooms</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
             Make your special occasions unforgettable with our dedicated event spaces designed for birthdays, celebrations, and memorable gatherings
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function EventRoomsSection() {
                     <IconComponent className={`h-7 w-7 ${feature.iconColor}`} />
                   </div>
                   <h3 className="text-lg font-nunito font-bold text-gray-800 dark:text-white mb-3">{feature.title}</h3>
-                  <p className="text-gray-600 text-sm">{feature.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">{feature.description}</p>
                 </CardContent>
               </Card>
             );
@@ -74,13 +74,13 @@ export default function EventRoomsSection() {
         </div>
 
         {/* Main Event Room Showcase */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg mb-12">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 shadow-lg mb-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl font-poppins font-bold text-gray-800 mb-6">
+              <h3 className="text-3xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
                 Dedicated Party Spaces
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
                 Our beautifully designed event rooms provide the perfect backdrop for your celebration. 
                 Each room comes fully equipped with everything you need to create magical moments.
               </p>
@@ -89,7 +89,7 @@ export default function EventRoomsSection() {
                 {roomFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -114,13 +114,13 @@ export default function EventRoomsSection() {
             <div className="relative">
               <div className="bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl p-8 text-center">
                 <PartyPopper className="h-24 w-24 text-accent mx-auto mb-4" />
-                <h4 className="text-2xl font-poppins font-bold text-gray-800 mb-4">
+                <h4 className="text-2xl font-nunito font-bold text-gray-800 dark:text-white mb-4">
                   Ready to Celebrate?
                 </h4>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
                   Let us handle the details while you enjoy the special moments with your loved ones.
                 </p>
-                <div className="flex items-center justify-center gap-4 text-sm text-gray-600">
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-600 dark:text-gray-300">
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4" />
                     <span>2-4 hours</span>
@@ -141,7 +141,7 @@ export default function EventRoomsSection() {
 
         {/* Call to Action */}
         <div className="text-center">
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
             Contact us to customize your perfect event package
           </p>
           <div className="flex flex-wrap justify-center gap-4">

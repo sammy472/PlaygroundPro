@@ -53,7 +53,7 @@ export default function ActivitiesSection() {
           <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
             Our <span className="text-secondary font-comfortaa">Activities</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Discover our diverse range of workshops and activities designed to nurture every aspect of your child's development
           </p>
         </div>
@@ -67,8 +67,8 @@ export default function ActivitiesSection() {
                   <div className={`${activity.bgColor} rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4`}>
                     <IconComponent className={`h-8 w-8 ${getIconColor(index)}`} />
                   </div>
-                  <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-4">{activity.title}</h3>
-                  <p className="text-gray-600">{activity.description}</p>
+                  <h3 className="text-2xl font-nunito font-bold text-gray-800 dark:text-white mb-4">{activity.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300">{activity.description}</p>
                 </CardContent>
               </Card>
             );

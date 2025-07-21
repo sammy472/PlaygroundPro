@@ -16,7 +16,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md shadow-lg z-50 border-b border-border/50">
+    <nav className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg z-50 border-b border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -110,52 +110,52 @@ export default function Navigation() {
         {/* Mobile menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
               <button 
                 onClick={() => scrollToSection("home")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection("about")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection("activities")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Activities
               </button>
               <button 
                 onClick={() => scrollToSection("workshops")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Workshops
               </button>
               <button 
                 onClick={() => scrollToSection("events")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Events
               </button>
               <button 
                 onClick={() => scrollToSection("pricing")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Pricing
               </button>
               <button 
                 onClick={() => scrollToSection("booking")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Book Visit
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
-                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+                className="block text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Contact
               </button>

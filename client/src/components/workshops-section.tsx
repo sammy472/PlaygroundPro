@@ -53,7 +53,7 @@ export default function WorkshopsSection() {
           <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
             Educational <span className="text-accent font-comfortaa">Workshops</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Structured learning programs designed to develop skills, creativity, and knowledge through engaging hands-on activities
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function WorkshopsSection() {
         </div>
         
         <div className="text-center mt-12">
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
             All workshops are led by qualified instructors and designed for different age groups
           </p>
           <div className="flex flex-wrap justify-center gap-4">

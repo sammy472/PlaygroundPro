@@ -18,7 +18,7 @@ export default function HeroSection() {
           alt="Children playing in colorful indoor playground" 
           className="w-full h-full object-cover opacity-20" 
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/70 dark:from-gray-900/90 dark:to-gray-900/70"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -34,7 +34,7 @@ export default function HeroSection() {
           Where Kids Learn Through Play
         </p>
         
-        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
           First-of-its-kind indoor amusement center in Africa, designed for children aged 6 months to 12 years in Casablanca, Morocco
         </p>
         
@@ -49,7 +49,7 @@ export default function HeroSection() {
           
           <Button 
             variant="outline"
-            className="bg-white hover:bg-gray-50 text-primary font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-primary"
+            className="bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 text-primary font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-primary"
           >
             <Play className="mr-2 h-5 w-5" />
             Watch Video

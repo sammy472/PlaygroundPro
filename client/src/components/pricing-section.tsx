@@ -77,13 +77,13 @@ export default function PricingSection() {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-white dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
             Flexible <span className="text-accent font-comfortaa">Pricing</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Choose the perfect option for your family's needs. From quick visits to regular play sessions, 
             we have pricing that works for everyone.
           </p>
@@ -108,17 +108,17 @@ export default function PricingSection() {
                   <div className={`rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 ${plan.bgColor.replace('50', '100')}`}>
                     <IconComponent className={`h-7 w-7 ${plan.iconColor}`} />
                   </div>
-                  <CardTitle className="text-2xl font-poppins font-bold text-gray-800">
+                  <CardTitle className="text-2xl font-nunito font-bold text-gray-800 dark:text-white">
                     {plan.name}
                   </CardTitle>
-                  <p className="text-gray-600 text-sm">{plan.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">{plan.description}</p>
                 </CardHeader>
 
                 <CardContent className="pt-0">
                   <div className="text-center mb-6">
                     <div className="flex items-center justify-center gap-2 mb-2">
-                      <span className="text-4xl font-bold text-gray-800">{plan.price}</span>
-                      <span className="text-lg text-gray-600">{plan.currency}</span>
+                      <span className="text-4xl font-bold text-gray-800 dark:text-white">{plan.price}</span>
+                      <span className="text-lg text-gray-600 dark:text-gray-300">{plan.currency}</span>
                     </div>
                     <p className="text-accent font-medium">{plan.duration}</p>
                   </div>
@@ -127,7 +127,7 @@ export default function PricingSection() {
                     {plan.features.map((feature, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700 text-sm">{feature}</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -149,8 +149,8 @@ export default function PricingSection() {
         </div>
 
         {/* Additional Information */}
-        <div className="bg-gray-50 rounded-2xl p-8 text-center">
-          <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-6">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
             Additional Services & Benefits
           </h3>
           
@@ -158,7 +158,7 @@ export default function PricingSection() {
             {additionalServices.map((service, index) => (
               <div key={index} className="flex items-center justify-center gap-3">
                 <div className="w-3 h-3 bg-accent rounded-full"></div>
-                <span className="text-gray-700">{service}</span>
+                <span className="text-gray-700 dark:text-gray-300">{service}</span>
               </div>
             ))}
           </div>
