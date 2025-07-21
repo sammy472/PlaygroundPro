@@ -129,3 +129,9 @@ The application is designed to be easily deployable to platforms like Replit, Ve
 - **Backend Authentication**: Implemented signup/login API endpoints with user validation
 - **Email Integration**: Added Nodemailer setup for contact form email functionality
 - **UI Components**: Created all necessary shadcn/ui components (Button, Input, Card, etc.)
+- **Event Rooms Section**: Added dedicated event spaces for birthdays and special celebrations
+- **Pricing Structure**: Implemented 3-tier pricing system:
+  - Quick Play (1.5 hours) - 150 MAD
+  - Classic Experience (3 hours) - 250 MAD (Most Popular)
+  - Flexi-Card (10 entries) - 800 MAD
+- **Navigation Updates**: Added Events and Pricing links to main navigation

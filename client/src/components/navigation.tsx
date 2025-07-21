@@ -49,6 +49,18 @@ export default function Navigation() {
                 Workshops
               </button>
               <button 
+                onClick={() => scrollToSection("events")}
+                className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Events
+              </button>
+              <button 
+                onClick={() => scrollToSection("pricing")}
+                className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Pricing
+              </button>
+              <button 
                 onClick={() => scrollToSection("booking")}
                 className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
@@ -119,6 +131,18 @@ export default function Navigation() {
                 className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Workshops
+              </button>
+              <button 
+                onClick={() => scrollToSection("events")}
+                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+              >
+                Events
+              </button>
+              <button 
+                onClick={() => scrollToSection("pricing")}
+                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+              >
+                Pricing
               </button>
               <button 
                 onClick={() => scrollToSection("booking")}
