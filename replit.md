@@ -116,3 +116,16 @@ The application follows a modern full-stack architecture with clear separation b
 - Assets: Served from dist/public directory
 
 The application is designed to be easily deployable to platforms like Replit, Vercel, or similar hosting services with minimal configuration changes.
+
+## Recent Changes
+
+### January 21, 2025
+- **Login/Signup Pages**: Created complete authentication pages at `/login` and `/signup` with form validation
+- **Contact Page**: Added dedicated contact page at `/contact` with email functionality
+- **Activities vs Workshops Separation**: 
+  - Updated Activities section to show actual playground games (Laser Tag, Ball Pit, Obstacle Course, etc.)
+  - Created new Workshops section for educational programs (Music, Science, Arts, etc.)
+  - Added both sections to navigation menu
+- **Backend Authentication**: Implemented signup/login API endpoints with user validation
+- **Email Integration**: Added Nodemailer setup for contact form email functionality
+- **UI Components**: Created all necessary shadcn/ui components (Button, Input, Card, etc.)

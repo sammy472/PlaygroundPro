@@ -2,6 +2,7 @@ import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about-section";
 import ActivitiesSection from "@/components/activities-section";
+import WorkshopsSection from "@/components/workshops-section";
 import CommitmentSection from "@/components/commitment-section";
 import BookingForm from "@/components/booking-form";
 import NewsletterSignup from "@/components/newsletter-signup";
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ActivitiesSection />
+      <WorkshopsSection />
       <CommitmentSection />
       <BookingForm />
       <NewsletterSignup />

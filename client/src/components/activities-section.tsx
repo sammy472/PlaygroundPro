@@ -1,42 +1,42 @@
-import { Activity, Music, FlaskConical, Utensils, Palette, Book } from "lucide-react";
+import { Zap, Target, Puzzle, Gamepad2, Rocket, Crown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function ActivitiesSection() {
   const activities = [
     {
-      icon: Activity,
-      title: "Sports",
-      description: "Physical development through fun sports activities, obstacle courses, and movement games that build coordination and strength.",
+      icon: Zap,
+      title: "Laser Tag Arena",
+      description: "Epic laser tag battles in our neon-lit arena with obstacles, hiding spots, and team missions for kids aged 6+.",
       bgColor: "bg-red-50"
     },
     {
-      icon: Music,
-      title: "Music & Dance",
-      description: "Express creativity through rhythm, melody, and movement. Our music workshops develop artistic skills and cultural appreciation.",
+      icon: Target,
+      title: "Ball Pit Adventure",
+      description: "Dive into thousands of colorful balls with slides, tunnels, and interactive games. Perfect for toddlers and young kids.",
       bgColor: "bg-teal-50"
     },
     {
-      icon: FlaskConical,
-      title: "Science & Technology",
-      description: "Spark curiosity with hands-on experiments, coding basics, and STEM activities that make learning science exciting and accessible.",
+      icon: Puzzle,
+      title: "Obstacle Course",
+      description: "Navigate through foam blocks, climbing walls, rope bridges, and tunnels to complete exciting physical challenges.",
       bgColor: "bg-yellow-50"
     },
     {
-      icon: Utensils,
-      title: "Catering",
-      description: "Healthy, delicious meals and snacks prepared with care. Learn about nutrition while enjoying kid-friendly, wholesome food.",
+      icon: Gamepad2,
+      title: "Interactive Gaming Zone",
+      description: "Motion-sensor games, educational video games, and interactive wall projections that respond to touch and movement.",
       bgColor: "bg-green-50"
     },
     {
-      icon: Palette,
-      title: "Culture & Creativity",
-      description: "Explore artistic expression through crafts, storytelling, and cultural activities that celebrate Morocco's rich heritage.",
+      icon: Rocket,
+      title: "Space Adventure Playground",
+      description: "Multi-level space-themed playground with rocket slides, moon bounce areas, and astronaut training obstacles.",
       bgColor: "bg-purple-50"
     },
     {
-      icon: Book,
-      title: "Reading Corner",
-      description: "Discover the joy of reading in our multilingual library featuring books in English, French, and Arabic for all reading levels.",
+      icon: Crown,
+      title: "Role-Play Kingdom",
+      description: "Dress-up area with costumes, mini market, doctor's clinic, and kitchen where kids can roleplay different professions.",
       bgColor: "bg-blue-50"
     }
   ];

@@ -43,6 +43,12 @@ export default function Navigation() {
                 Activities
               </button>
               <button 
+                onClick={() => scrollToSection("workshops")}
+                className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Workshops
+              </button>
+              <button 
                 onClick={() => scrollToSection("booking")}
                 className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
@@ -107,6 +113,12 @@ export default function Navigation() {
                 className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
               >
                 Activities
+              </button>
+              <button 
+                onClick={() => scrollToSection("workshops")}
+                className="block text-gray-700 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
+              >
+                Workshops
               </button>
               <button 
                 onClick={() => scrollToSection("booking")}
