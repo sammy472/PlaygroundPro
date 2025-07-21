@@ -2,11 +2,11 @@ import { Check } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-6">
-            What Makes <span className="text-primary font-fredoka">Flokiz</span> Special?
+          <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
+            What Makes <span className="text-primary font-comfortaa">Flokiz</span> Special?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We're revolutionizing childhood development through play, creativity, and learning in a safe, hygienic, and fun environment

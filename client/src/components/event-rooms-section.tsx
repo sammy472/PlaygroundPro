@@ -47,8 +47,8 @@ export default function EventRoomsSection() {
     <section id="events" className="py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-6">
-            Event <span className="text-accent font-fredoka">Rooms</span>
+          <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
+            Event <span className="text-accent font-comfortaa">Rooms</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Make your special occasions unforgettable with our dedicated event spaces designed for birthdays, celebrations, and memorable gatherings
@@ -65,7 +65,7 @@ export default function EventRoomsSection() {
                   <div className={`${feature.bgColor} rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4`}>
                     <IconComponent className={`h-7 w-7 ${feature.iconColor}`} />
                   </div>
-                  <h3 className="text-lg font-poppins font-bold text-gray-800 mb-3">{feature.title}</h3>
+                  <h3 className="text-lg font-nunito font-bold text-gray-800 dark:text-white mb-3">{feature.title}</h3>
                   <p className="text-gray-600 text-sm">{feature.description}</p>
                 </CardContent>
               </Card>

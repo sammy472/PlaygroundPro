@@ -47,11 +47,11 @@ export default function ActivitiesSection() {
   };
 
   return (
-    <section id="activities" className="py-20 bg-neutral">
+    <section id="activities" className="py-20 bg-neutral dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-6">
-            Our <span className="text-secondary font-fredoka">Activities</span>
+          <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
+            Our <span className="text-secondary font-comfortaa">Activities</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover our diverse range of workshops and activities designed to nurture every aspect of your child's development

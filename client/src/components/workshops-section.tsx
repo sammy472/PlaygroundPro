@@ -47,11 +47,11 @@ export default function WorkshopsSection() {
   };
 
   return (
-    <section id="workshops" className="py-20 bg-white">
+    <section id="workshops" className="py-20 bg-white dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-6">
-            Educational <span className="text-accent font-fredoka">Workshops</span>
+          <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
+            Educational <span className="text-accent font-comfortaa">Workshops</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Structured learning programs designed to develop skills, creativity, and knowledge through engaging hands-on activities
@@ -67,8 +67,8 @@ export default function WorkshopsSection() {
                   <div className={`${workshop.bgColor} rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4`}>
                     <IconComponent className={`h-8 w-8 ${getIconColor(index)}`} />
                   </div>
-                  <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-4">{workshop.title}</h3>
-                  <p className="text-gray-600">{workshop.description}</p>
+                  <h3 className="text-2xl font-nunito font-bold text-gray-800 dark:text-white mb-4">{workshop.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300">{workshop.description}</p>
                 </CardContent>
               </Card>
             );

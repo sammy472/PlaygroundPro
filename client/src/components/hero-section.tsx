@@ -26,11 +26,11 @@ export default function HeroSection() {
           <Baby className="h-16 w-16 text-primary mx-auto" />
         </div>
         
-        <h1 className="text-4xl md:text-6xl font-poppins font-bold text-gray-800 mb-6">
-          Welcome to <span className="text-primary font-fredoka">Flokiz</span>
+        <h1 className="text-4xl md:text-6xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
+          Welcome to <span className="text-primary font-comfortaa">Flokiz</span>
         </h1>
         
-        <p className="text-2xl md:text-3xl font-poppins font-medium text-secondary mb-4">
+        <p className="text-2xl md:text-3xl font-nunito font-medium text-secondary mb-4">
           Where Kids Learn Through Play
         </p>
         

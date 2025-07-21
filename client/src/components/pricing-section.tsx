@@ -80,8 +80,8 @@ export default function PricingSection() {
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-6">
-            Flexible <span className="text-accent font-fredoka">Pricing</span>
+          <h2 className="text-4xl md:text-5xl font-nunito font-bold text-gray-800 dark:text-white mb-6">
+            Flexible <span className="text-accent font-comfortaa">Pricing</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose the perfect option for your family's needs. From quick visits to regular play sessions, 
