@@ -212,7 +212,8 @@ export default function Contact() {
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Address</h4>
                         <p className="text-gray-600">
-                          Quartier Maarif, Avenue Hassan II<br />
+                          Avenue de Nice
+                          <br />
                           Casablanca 20000, Morocco
                         </p>
                       </div>
@@ -224,7 +225,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Phone</h4>
-                        <p className="text-gray-600">+212 522 000 000</p>
+                        <p className="text-gray-600">+212 676 767 288</p>
                         <p className="text-sm text-gray-500">WhatsApp available</p>
                       </div>
                     </div>
@@ -246,8 +247,8 @@ export default function Contact() {
                       <div>
                         <h4 className="font-semibold text-gray-800 mb-2">Opening Hours</h4>
                         <div className="text-gray-600 space-y-1">
-                          <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-                          <p>Saturday - Sunday: 9:00 AM - 9:00 PM</p>
+                          <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                          <p>Saturday - Sunday: 11:00 AM - 8:00 PM</p>
                           <p className="text-sm text-gray-500">Closed on public holidays</p>
                         </div>
                       </div>
@@ -267,7 +268,7 @@ export default function Contact() {
                       </Button>
                     </Link>
                     <Button 
-                      onClick={() => window.open('https://wa.me/212522000000?text=Hello%20Flokiz!%20I%20need%20help.', '_blank')}
+                      onClick={() => window.open('https://wa.me/212676767288?text=Hello%20Flokiz!%20I%20need%20help.', '_blank')}
                       variant="outline" 
                       className="w-full border-white text-white hover:bg-white hover:text-primary"
                     >

@@ -15,7 +15,6 @@ import Footer from "@/components/footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
       <HeroSection />
       <AboutSection />
       <ActivitiesSection />
@@ -32,7 +31,7 @@ export default function Home() {
       {/* Floating WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <button 
-          onClick={() => window.open('https://wa.me/212522000000?text=Hello%20Flokiz!%20I%27d%20like%20to%20know%20more%20about%20your%20services.', '_blank')}
+          onClick={() => window.open('https://wa.me/212676767288?text=Hello%20Flokiz!%20I%27d%20like%20to%20know%20more%20about%20your%20services.', '_blank')}
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
         >
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

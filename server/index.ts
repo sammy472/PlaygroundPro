@@ -1,6 +1,8 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import { config } from "dotenv";
+config(); // Load environment variables from .env file
 
 const app = express();
 app.use(express.json());
@@ -63,8 +65,8 @@ app.use((req, res, next) => {
   const port = parseInt(process.env.PORT || '5000', 10);
   server.listen({
     port,
-    host: "0.0.0.0",
-    reusePort: true,
+    host: "127.0.0.1",
+    reusePort: false,
   }, () => {
     log(`serving on port ${port}`);
   });

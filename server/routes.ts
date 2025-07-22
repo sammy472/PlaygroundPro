@@ -4,15 +4,22 @@ import { storage } from "./storage";
 import { insertBookingSchema, insertNewsletterSchema, insertContactSchema, insertUserSchema } from "@shared/schema";
 import { z } from "zod";
 import nodemailer from "nodemailer";
+import { config } from "dotenv";
+import { console } from "inspector";
+config(); // Load environment variables from .env file
 
 // Email configuration (using environment variables for security)
 const transporter = nodemailer.createTransport({
   service: 'gmail', // You can change this to your email provider
+  host: 'smtp.gmail.com',
+  port: 587,
+  secure: false, // true for 465, false for other ports
   auth: {
     user: process.env.EMAIL_USER || 'your-email@gmail.com',
     pass: process.env.EMAIL_PASS || 'your-app-password'
   }
 });
+
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Authentication routes
@@ -86,6 +93,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Contact routes
   app.post("/api/contact", async (req, res) => {
+    console.log(process.env.EMAIL_USER, process.env.EMAIL_PASS);
     try {
       const validatedData = insertContactSchema.parse(req.body);
       const contact = await storage.createContact(validatedData);
@@ -101,23 +109,90 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Email sending route
   app.post("/api/send-email", async (req, res) => {
+    console.log(process.env.EMAIL_USER, process.env.EMAIL_PASS);
     try {
       const { name, email, subject, message } = req.body;
       
       const mailOptions = {
-        from: process.env.EMAIL_USER || 'your-email@gmail.com',
-        to: 'hello@flokiz.ma', // Flokiz contact email
+        from: {
+          name: "Flokiz Contact Form",
+          address: process.env.EMAIL_USER || 'your-email@gmail.com'
+        },
+        to: process.env.EMAIL_USER, // Flokiz contact email
         subject: `New Contact Form Message: ${subject || 'No Subject'}`,
         html: `
-          <h2>New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Subject:</strong> ${subject || 'No Subject'}</p>
-          <p><strong>Message:</strong></p>
-          <p>${message.replace(/\n/g, '<br>')}</p>
-          <hr>
-          <p><small>This message was sent from the Flokiz website contact form.</small></p>
-        `,
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="UTF-8" />
+            <style>
+              body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #f5f5f5;
+                padding: 20px;
+                color: #333;
+              }
+              .email-container {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #ffffff;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+              }
+              .header {
+                background-color: #ff6f61;
+                color: white;
+                padding: 20px;
+                text-align: center;
+              }
+              .header h2 {
+                margin: 0;
+                font-size: 24px;
+              }
+              .content {
+                padding: 30px;
+              }
+              .content p {
+                margin: 10px 0;
+                font-size: 16px;
+              }
+              .label {
+                font-weight: bold;
+                color: #555;
+              }
+              .footer {
+                font-size: 12px;
+                color: #888;
+                text-align: center;
+                padding: 20px;
+                background-color: #f0f0f0;
+              }
+              .divider {
+                border-top: 1px solid #eee;
+                margin: 20px 0;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="email-container">
+              <div class="header">
+                <h2>📩 New Contact Form Submission</h2>
+              </div>
+              <div class="content">
+                <p><span class="label">Name:</span> ${name}</p>
+                <p><span class="label">Email:</span> <a href="mailto:${email}">${email}</a></p>
+                <p><span class="label">Subject:</span> ${subject || 'No Subject'}</p>
+                <div class="divider"></div>
+                <p><span class="label">Message:</span></p>
+                <p>${message.replace(/\n/g, '<br>')}</p>
+              </div>
+              <div class="footer">
+                <p>This message was sent via the Flokiz website contact form.</p>
+              </div>
+            </div>
+          </body>
+        </html>`,
         replyTo: email
       };
 

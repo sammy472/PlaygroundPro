@@ -18,7 +18,7 @@ export default function HeroSection() {
           alt="Children playing in colorful indoor playground" 
           className="w-full h-full object-cover opacity-20" 
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/70 dark:from-gray-900/90 dark:to-gray-900/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/40 to-white/40 dark:from-gray-900/40 dark:to-gray-900/40"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -51,7 +51,7 @@ export default function HeroSection() {
             variant="outline"
             className="bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 text-primary font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-primary"
           >
-            <Play className="mr-2 h-5 w-5" />
+          <Play className="mr-2 h-5 w-5" />
             Watch Video
           </Button>
         </div>

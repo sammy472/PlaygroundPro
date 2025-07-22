@@ -46,6 +46,26 @@ export default function ContactSection() {
     }
   });
 
+  const emailMutation = useMutation({
+    mutationFn: async (data: typeof formData) => {
+      return await apiRequest("POST", "/api/send-email", data);
+    },
+    onSuccess: () => {
+      toast({
+        title: "Email Sent Successfully!",
+        description: "Your message has been sent directly to our team.",
+      });
+    },
+    onError: () => {
+      toast({
+        title: "Email Failed",
+        description: "Could not send email. Your message was saved for our review.",
+        variant: "destructive"
+      });
+    }
+  });
+
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
@@ -57,6 +77,7 @@ export default function ContactSection() {
       return;
     }
     contactMutation.mutate(formData);
+    emailMutation.mutate(formData);
   };
 
   const handleChange = (field: string, value: string) => {
@@ -157,7 +178,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">Location</h4>
                     <p className="text-gray-600">
-                      Quartier Maarif, Avenue Hassan II<br />
+                      Avenue de Nice<br/>
                       Casablanca 20000, Morocco
                     </p>
                   </div>
@@ -169,7 +190,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">Phone</h4>
-                    <p className="text-gray-600">+212 522 000 000</p>
+                    <p className="text-gray-600">+212 676 767 288</p>
                   </div>
                 </div>
                 

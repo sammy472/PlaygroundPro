@@ -82,7 +82,7 @@ export default function Signup() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 flex items-center justify-center p-4">
-      <div className="absolute top-4 left-4">
+      <div className="absolute top-4 left-4 pt-20">
         <Link href="/">
           <Button variant="ghost" className="text-primary hover:text-red-600">
             <Home className="mr-2 h-4 w-4" />

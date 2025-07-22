@@ -89,7 +89,7 @@ npm run dev
 ```
 
 This will start:
-- Frontend (Vite) on `http://localhost:5000`
+- Frontend (Vite) on `http://localhost:3000`
 - Backend (Express) on the same port (served together)
 
 ### 7. Build for Production

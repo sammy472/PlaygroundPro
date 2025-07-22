@@ -8,9 +8,12 @@ import Home from "@/pages/home";
 import Login from "@/pages/login";
 import Signup from "@/pages/signup";
 import Contact from "@/pages/contact";
+import Navigation from "@/components/navigation";
 
 function Router() {
   return (
+    <>
+    <Navigation />
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/login" component={Login} />
@@ -25,6 +28,7 @@ function Router() {
         </div>
       </Route>
     </Switch>
+    </>
   );
 }
 
